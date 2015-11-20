@@ -1,1 +1,57 @@
+*{
+    box-sizing: border-box;
+}
 
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #ADD8E6;
+    color: #333;
+    font-family: sans-serif;
+}
+
+label, input{
+    margin: 20px;
+}
+input{
+    width: 75%;
+    text-align:left;
+}
+.right{
+    width: 50%;
+    float: right;
+}
+.left{
+    width:50%;
+    float: left;
+}
+
+@media all and (min-width: 400px) and (max-width: 1400px){
+    label, input{
+        margin: 30px;
+    }
+}
+
+@media all and (max-width: 399px){
+    label{
+        color: transparent;
+        float: right;
+        margin: 0px;
+    }
+    .right{
+        width: 100%;
+        float: left;
+    }
+    .left{
+        width: 100%;
+        float: left;
+    }
+}
